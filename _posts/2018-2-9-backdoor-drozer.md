@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Backdoor na Androida w oparciu o narzędzie Drozer"
+title: "[PL] Backdoor na Androida w oparciu o narzędzie Drozer"
 published: true
 date: 2018-02-09
 ---
@@ -56,7 +56,7 @@ Kod dodatkowo opakowujemy w bloki *try* i *catch*, aby zapobiec crashowaniu apli
 
 [MainActivity.java](https://raw.githubusercontent.com/LogicalTrust/materials/master/drozer-backdoor/MainActivity.java)
 
-![MainActivity.java](https://raw.githubusercontent.com/LogicalTrust/materials/master/drozer-backdoor/1.png)
+[![MainActivity.java](https://raw.githubusercontent.com/LogicalTrust/materials/master/drozer-backdoor/1.png)](https://raw.githubusercontent.com/LogicalTrust/materials/master/drozer-backdoor/1.png)
 
 Z tak przygotowanego projektu budujemy paczkę, klikając *Build*, a następnie *Build APK(s)*.
 
@@ -157,7 +157,7 @@ Starting drozer Server, listening on 0.0.0.0:31415
 2017-08-13 15:22:34,652 - drozer.server.protocols.drozerp.drozer - INFO - accepted connection from 2lrbgebepd3sv
 {% endhighlight %}
 
-![drozer server start](https://raw.githubusercontent.com/LogicalTrust/materials/master/drozer-backdoor/2.png)
+[![drozer server start](https://raw.githubusercontent.com/LogicalTrust/materials/master/drozer-backdoor/2.png)](https://raw.githubusercontent.com/LogicalTrust/materials/master/drozer-backdoor/2.png)
 
 Ostatnia linia to log, który powinniśmy ujrzeć po uruchomieniu aplikacji z backdoorem. Oznacza ona udane połączenie.
 
@@ -218,5 +218,5 @@ dz> run shell.exec "uname -a"
 Linux localhost 3.10.49-11174248 #1 SMP PREEMPT Wed Apr 12 15:26:53 KST 2017 armv7l 
 {% endhighlight %}
 
-![drozer connected](https://raw.githubusercontent.com/LogicalTrust/materials/master/drozer-backdoor/3.png)
+[![drozer connected](https://raw.githubusercontent.com/LogicalTrust/materials/master/drozer-backdoor/3.png)](https://raw.githubusercontent.com/LogicalTrust/materials/master/drozer-backdoor/3.png)
 
