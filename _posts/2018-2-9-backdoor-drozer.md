@@ -3,6 +3,7 @@ layout: post
 title: "[PL] Backdoor na Androida w oparciu o narzędzie Drozer"
 published: true
 date: 2018-02-09
+author: Michal
 ---
 
 ## Wstęp
