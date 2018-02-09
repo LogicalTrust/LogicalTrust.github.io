@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+We dig all kinds of security, check our [GitHub](https://github.com/LogicalTrust), [Twitter](https://twitter.com/logicaltrust), [Slideshare](https://www.slideshare.net/logicaltrust) and [website](https://logicaltrust.net/en/)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[GPG](https://logicaltrust.net/logicaltrust.gpg)
