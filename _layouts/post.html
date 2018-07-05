@@ -10,7 +10,12 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }} by {{ page.author }}
+    Written on {{ page.date | date: "%B %e, %Y" }} by
+  	{% if page.author == "Michal" %}
+  		Michał Dardas
+  	{% else %}
+     {{ page.author }}
+    {% endif %}
   </div>
 
   {% include disqus.html %}
