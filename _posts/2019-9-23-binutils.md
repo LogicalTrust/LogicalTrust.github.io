@@ -15,15 +15,15 @@ It's a very common tool, likely you have got it installed in your operating syst
 
 ## Why *as*?
 
-Remember the classical [Trusting trust concept by Ken Thompson](https://dl.acm.org/citation.cfm?id=358210)? We've thought that it would be super useful to find a bunch of bugs that could let us to execute shell from *as*. But if you ever compiled sources that you haven't read before (you didn't do that, right?), malicious code could already change your compiler, so you don't know if your *as(1)* is still *as(1)*. What a crazy time to be alive!
+Remember the classical [Trusting trust concept by Ken Thompson](https://dl.acm.org/citation.cfm?id=358210)? We've thought that it would be super useful to find a bunch of bugs that could let us to execute shell from *as*. But if you ever compiled source codes that you haven't read (you didn't do that, right?), malicious code could already change your compiler, so you don't know if your *as(1)* is still *as(1)*. What a crazy time to be alive!
 
 ## Our approach
 
-We don't know if you've ever seen the *as* code. It's not easy to analyze and read for many reasons. And yeah, Linus's law states that "*given enough eyeballs, all bugs are shallow*". So we decided to try use old, good dumb fuzzing. We've built small corpus of *.s* files basing on the open source projects (i.a. Linux Kernel, binutils's test suite, \*BSD systems) and put it through cherished radamsa mutator ([did you know that it's written in Scheme?](https://gitlab.com/akihe/radamsa/blob/develop/rad/mutations.scm#L1143)). *as(1)* provides support for many platforms including exotic ones like z8k and rs6000. We've targeted them as well to cover as much code as we can. Tests were done on binutils built with the Address Sanitizer.
+We don't know if you've ever seen the *as* code. It's not easy to analyze and read for many reasons. And yeah, Linus' law states that "*given enough eyeballs, all bugs are shallow*". So we decided to try use old, good dumb fuzzing. We've built small corpus of *.s* files basing on the open source projects (i.a. Linux Kernel, binutils's test suite, \*BSD systems) and put it through cherished radamsa mutator ([did you know that it's written in Scheme?](https://gitlab.com/akihe/radamsa/blob/develop/rad/mutations.scm#L1143)). *as(1)* provides support for many platforms including exotic ones like z8k and rs6000. We've targeted them as well to cover as much code as we can. Tests were done on binutils built with the Address Sanitizer.
 
 ## So you say dumb fuzzing was enough?
 
-Hell yeah! We've found a bunch of bugs.
+Hell yeah! We found a bunch of bugs.
 
 {% highlight x %}
 # clone the repository
