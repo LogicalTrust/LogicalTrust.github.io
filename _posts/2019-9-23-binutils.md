@@ -4,6 +4,7 @@ title: "[EN] A-Z: B - Pain in the as"
 published: true
 date: 2019-09-23
 author: MichalMateusz
+redirect: https://logicaltrust.net/blog/2019/09/binutils.html
 ---
 
 ## What's *as*?

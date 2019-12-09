@@ -4,6 +4,7 @@ title: "[PL] Smalidea - debugowanie aplikacji Android bez kodu źródłowego"
 published: true
 date: 2018-07-05
 author: Michal
+redirect: https://logicaltrust.net/blog/2018/07/smalidea.html
 ---
 
 ## Wstęp

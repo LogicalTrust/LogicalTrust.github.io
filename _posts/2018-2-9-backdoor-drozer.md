@@ -4,6 +4,7 @@ title: "[PL] Backdoor na Androida w oparciu o narzędzie Drozer"
 published: true
 date: 2018-02-09
 author: Michal
+redirect: https://logicaltrust.net/blog/2018/02/backdoor-drozer.html
 ---
 
 ## Wstęp
